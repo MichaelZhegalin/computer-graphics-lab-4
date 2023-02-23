@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/imgonline-com-ua-Resize-Yq0buosdpKBRp5tv.jpg");
+    background-repeat: repeat;
+}
+
+.canvasStyle{
+    position: absolute;
+    left: 30%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: white;
+}
+
+.interface{
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30vw;
+    height: 62vh;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(0,165,80, 0.5);
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 20vh;
+    margin-bottom: 15px;
+}
+
+.circleHeader{
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+input{
+    text-align: center;
+    width: 25vw;
+    height: 10vh;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.headerContainer{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(165,42,42, 0.4);
+    padding: 15px 30px 15px 30px;
+    margin: 0;
+    border-radius: 20px;
+}
+
+h1{
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 46px;
+}
+
+h2{
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+    font-size: 35px;
+}

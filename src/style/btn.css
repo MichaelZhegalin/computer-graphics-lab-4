@@ -1,0 +1,33 @@
+
+.btnContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.normalBtn{
+    width: 12vw;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.draw{
+    background-color: rgba(34,139,34, 0.4);
+}
+
+.draw:hover{
+    transition: ease-in 125ms;
+    background-color: rgba(34,139,34, 0.8);
+}
+
+.clear{
+    background-color: rgba(178,34,34, 0.4);
+}
+
+.clear:hover{
+    transition: ease-in 175ms;
+    background-color: rgba(178,34,34, 0.8);
+}
