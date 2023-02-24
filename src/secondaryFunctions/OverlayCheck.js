@@ -12,6 +12,6 @@ export const OverlayCheck = (circleOne, circleTwo) => {
     if(Math.sqrt(((x1 - x2) ** 2 + (y1 - y2) ** 2)) >= (r1 + r2)){
         return true
     }else{
-        alert("Разуй глаза, братик, окружности накладываются")
+        alert("Окружности накладываются, измените радиус!")
     }
 }
