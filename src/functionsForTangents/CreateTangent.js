@@ -24,6 +24,8 @@ export const CreateTangent = (context, circleOne, circleTwo) =>{
         const firstTouchPoint = FirstTouchPoint(largerCircle, auxiliaryPoint[0], auxiliaryPoint[1], smallerCircle)
         const secondTouchPoint = SecondTouchPoint(auxiliaryPoint[0], auxiliaryPoint[1], smallerCircle, firstTouchPoint[0], firstTouchPoint[1])
 
+        console.log("Точки касания: ", firstTouchPoint, secondTouchPoint);
+
         context.beginPath()
 
         context.strokeStyle = 'red'

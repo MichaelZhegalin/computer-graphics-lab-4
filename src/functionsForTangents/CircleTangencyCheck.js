@@ -30,6 +30,9 @@ export const CircleTangencyCheck = (circleOne, circleTwo, context, smallerCircle
         else{
             extensionCoeff = -1
         }
+
+        console.log("Точки касания: ", smallerCircleX + smallerCircleRadius * extensionCoeff, smallerCircleY)
+
         context.moveTo((smallerCircleY + 10) * 10 , (smallerCircleX + smallerCircleRadius * extensionCoeff) * 10)
         context.lineTo((smallerCircleY - 10) * 10, (smallerCircleX + smallerCircleRadius * extensionCoeff) * 10)
         context.stroke()
@@ -50,6 +53,8 @@ export const CircleTangencyCheck = (circleOne, circleTwo, context, smallerCircle
         else{
             extensionCoeff = -1
         }
+
+        console.log("Точки касания: ", smallerCircleX, smallerCircleY + smallerCircleRadius * extensionCoeff)
 
         context.moveTo((smallerCircleY + smallerCircleRadius * extensionCoeff) * 10, (smallerCircleX + 10) * 10)
         context.lineTo((smallerCircleY + smallerCircleRadius * extensionCoeff) * 10, (smallerCircleX - 10) * 10)

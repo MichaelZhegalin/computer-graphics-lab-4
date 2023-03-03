@@ -9,7 +9,5 @@ export const DefiningLargerCircle = (circleOne, circleTwo) =>{
         largerCircle = circleTwo;
     }
 
-    console.log("Большая окружность", largerCircle)
-
     return largerCircle
 }

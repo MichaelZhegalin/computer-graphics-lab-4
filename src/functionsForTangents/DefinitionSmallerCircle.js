@@ -9,7 +9,5 @@ export const DefinitionSmallerCircle = (circleOne, circleTwo) =>{
         smallerCircle = circleOne;
     }
 
-    console.log("Меньшая окружность", smallerCircle)
-
     return smallerCircle
 }

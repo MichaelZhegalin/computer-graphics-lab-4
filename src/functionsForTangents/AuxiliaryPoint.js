@@ -13,9 +13,6 @@ export const AuxiliaryPoint = (xBigCircle, yBigCircle, R, xMiddleCircle, yMiddle
     let y1;
     let y2;
 
-    console.log(xBigCircle, yBigCircle, R, xMiddleCircle, yMiddleCircle, rMiddleCircle)
-
-
     if (xBigCircle === xMiddleCircle) {
         k2 = 2 * yBigCircle - 2 * yMiddleCircle;
         k3 = xMiddleCircle ** 2 + yMiddleCircle ** 2 - xBigCircle ** 2 - yBigCircle ** 2 + R ** 2 - rMiddleCircle ** 2;

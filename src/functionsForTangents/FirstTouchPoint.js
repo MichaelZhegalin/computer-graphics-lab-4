@@ -32,8 +32,6 @@ export const FirstTouchPoint = (circle, xAuxiliaryPoint, yAuxiliaryPoint, smallC
     const y1 = m * x1 + n;
     const y2 = m * x2 + n;
 
-    console.log("m n", m, n)
-
     if(Math.sqrt((x2 - xSmallCircle)**2 + (y2 - ySmallCircle) ** 2) >= Math.sqrt((x1 - xSmallCircle)**2 + (y1 - ySmallCircle) ** 2)){
         return [x1, y1]
     }
