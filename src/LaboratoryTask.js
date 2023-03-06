@@ -1,16 +1,16 @@
 import {circle} from "./geometry/Сircle";
 import {FoolTest} from "./secondaryFunctions/FoolTest";
 import {OverlayCheck} from "./secondaryFunctions/OverlayCheck";
-import {CreateTangent} from "./functionsForTangents/CreateTangent";
 import {ExceedingCanvasCheck} from "./secondaryFunctions/ExceedingCanvasCheck ";
+import {bezierCurveEquation} from "./bezierСurves/BezierCurveEquation";
 
 export const LaboratoryTask = (context, circleOne, circleTwo) =>{
 
-    if(FoolTest(circleOne, circleTwo) && OverlayCheck(circleOne, circleTwo) && ExceedingCanvasCheck(circleOne, circleTwo)){
-        circle(context, Number(circleOne.xCoordinate), Number(circleOne.yCoordinate), Number(circleOne.radius));
-        circle(context, Number(circleTwo.xCoordinate), Number(circleTwo.yCoordinate), Number(circleTwo.radius));
 
-        CreateTangent(context, circleOne, circleTwo)
-    }
+    bezierCurveEquation([5, 25, 5, 20, 5], [0, 16, 24, 0, 5], context)
+
+    // if(FoolTest(circleOne, circleTwo) && OverlayCheck(circleOne, circleTwo) && ExceedingCanvasCheck(circleOne, circleTwo)){
+    //
+    // }
 
 }
