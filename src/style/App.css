@@ -50,8 +50,8 @@
 
 input{
     text-align: center;
-    width: 25vw;
-    height: 10vh;
+    /*width: 25vw;*/
+    /*height: 10vh;*/
     align-self: center;
     border: none;
     border-radius: 10px;

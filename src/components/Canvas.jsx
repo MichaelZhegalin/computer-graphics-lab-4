@@ -3,7 +3,7 @@ import {LaboratoryTask} from "../LaboratoryTask";
 import {coordinateAxes} from "../geometry/CoordinateAxes";
 import {ClearCanvas} from "../userInterface/ClearCanvas";
 
-const Canvas = ({state, clearState, setClearState, draw}) => {
+const Canvas = ({state, clearState, setClearState, draw, coordinateArr}) => {
 
     const canvasRef = useRef(null);
 
@@ -20,7 +20,7 @@ const Canvas = ({state, clearState, setClearState, draw}) => {
 
         if(state){
             ClearCanvas(context);
-            LaboratoryTask(context);
+            LaboratoryTask(context, coordinateArr);
             draw();
         }
         context.restore();
