@@ -37,27 +37,38 @@
 
 .inputContainer{
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    height: 20vh;
-    margin-bottom: 15px;
-}
-
-.circleHeader{
-    margin: 0 0 20px 0;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
 }
 
 input{
     text-align: center;
-    /*width: 25vw;*/
-    /*height: 10vh;*/
     align-self: center;
+    width: 11vw;
     border: none;
     border-radius: 10px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 10px;
 }
+
+input:focus{
+    border: none;
+}
+
+.dotsInput{
+    display: flex;
+    gap: 20px
+}
+
+.dotsList{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow: auto;
+}
+
 
 .headerContainer{
     position: relative;

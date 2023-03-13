@@ -31,3 +31,39 @@
     transition: ease-in 175ms;
     background-color: rgba(178,34,34, 0.8);
 }
+
+.removeDot{
+    color: rgba(0,0,0, 0.4);
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(178,34,34, 0.6);
+}
+
+.removeDot:hover{
+    transition: ease-in 220ms;
+    color: black;
+    background-color: rgba(178,34,34, 0.8);
+}
+
+.createDot{
+    width: 27vw;
+    align-self: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(237,135,45, 0.6);
+}
+
+.createDot:hover{
+    transition: ease-in 175ms;
+    background-color: rgba(237,135,45, 0.8);
+}

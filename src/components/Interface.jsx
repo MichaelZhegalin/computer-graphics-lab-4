@@ -1,14 +1,12 @@
 import Buttons from "./Buttons";
-import PointEntry from "./pointEntry";
+import DotsList from "./DotsList";
 
 const Interface = ({draw, clear, coordinateArr, createNewDot, setCoordinateArr, removeDot}) => {
 
     return (
         <div className='interface'>
-            {coordinateArr.map((el, num) =>
-                <PointEntry key={num} num={num} coordinate={el} setCoordinateArr={setCoordinateArr} removeDot={removeDot}/>
-            )}
-            <button onClick={createNewDot}>Создать новую точку</button>
+            <DotsList removeDot={removeDot} coordinateArr={coordinateArr} setCoordinateArr={setCoordinateArr}/>
+            <button className="createDot" onClick={createNewDot}>Создать новую точку</button>
             <Buttons draw={draw} clear={clear}/>
         </div>
     );

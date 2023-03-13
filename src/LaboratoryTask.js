@@ -12,6 +12,4 @@ export const LaboratoryTask = (context, coordinateArr) =>{
 
     bezierCurveEquation(bezierDotsX, bezierDotsY, context)
 
-        // [5, 25, 5, 20, 5], [0, 16, 24, 0, 5]
-
 }
