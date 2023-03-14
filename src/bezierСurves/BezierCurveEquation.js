@@ -14,7 +14,7 @@ export const bezierCurveEquation = (bezierDotsX, bezierDotsY, context) => {
     let P = null;
     let PY = null;
 
-    while(t <= 1){
+    while(t <= 1 && bezierDegree > 0){
         P = (1 - t)**bezierDegree*bezierDotsX[0] + t**bezierDegree*bezierDotsX[bezierDotsX.length - 1]
         for(let i = 1; i < (bezierDegree); i++){
             P = P + (factorial(bezierDegree)/(factorial(i) * factorial(bezierDegree - i))) * t**i * (1-t)**(bezierDegree - i) * bezierDotsX[i];

@@ -1,4 +1,5 @@
 import {bezierCurveEquation} from "./bezierСurves/BezierCurveEquation";
+import {brokenLine} from "./bezierСurves/BrokenLine";
 
 export const LaboratoryTask = (context, coordinateArr) =>{
 
@@ -11,5 +12,6 @@ export const LaboratoryTask = (context, coordinateArr) =>{
     }
 
     bezierCurveEquation(bezierDotsX, bezierDotsY, context)
+    brokenLine(context, coordinateArr)
 
 }
