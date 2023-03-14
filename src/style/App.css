@@ -67,6 +67,7 @@ input:focus{
     flex-direction: column;
     gap: 15px;
     overflow: auto;
+    text-align: center;
 }
 
 
