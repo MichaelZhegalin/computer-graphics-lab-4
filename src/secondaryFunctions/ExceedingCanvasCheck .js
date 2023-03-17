@@ -1,42 +1,19 @@
-export const ExceedingCanvasCheck = (circleOne, circleTwo) => {
-    let exceedingCanvasCheck = true;
+export const ExceedingCanvasCheck = (bezierDotsX, bezierDotsY) => {
 
-    const rCircleOne = Number(circleOne.radius)
-    const rCircleTwo = Number(circleTwo.radius)
-
-    if(Number(circleOne.yCoordinate) - rCircleOne < - 24
-        ||
-        Number(circleOne.yCoordinate) - rCircleOne > 24
-        || Number(circleOne.yCoordinate) + rCircleOne > 24
-        || Number(circleOne.yCoordinate) + rCircleOne < -24){
-        exceedingCanvasCheck = false;
-        alert("Окружность номер один выходит за границы холста по оси y!")
-    }
-    if(Number(circleTwo.yCoordinate) - rCircleTwo < - 24
-        ||
-        Number(circleTwo.yCoordinate) - rCircleTwo > 24
-        || Number(circleTwo.yCoordinate) + rCircleTwo > 24
-        || Number(circleTwo.yCoordinate) + rCircleTwo < -24){
-        exceedingCanvasCheck = false;
-        alert("Окружность номер два выходит за границы холста по оси y!")
-    }
-    if(Number(circleOne.xCoordinate) - rCircleOne < - 37
-        ||
-        Number(circleOne.xCoordinate) - rCircleOne > 37
-        || Number(circleOne.xCoordinate) + rCircleOne > 37
-        || Number(circleOne.xCoordinate) + rCircleOne < -37){
-        exceedingCanvasCheck = false;
-        alert("Окружность номер один выходит за границы холста по оси x!")
-    }
-    if(Number(circleTwo.xCoordinate) - rCircleTwo < - 37
-        ||
-        Number(circleTwo.xCoordinate) - rCircleTwo > 37
-        || Number(circleTwo.xCoordinate) + rCircleTwo > 37
-        || Number(circleTwo.xCoordinate) + rCircleTwo < -37){
-        exceedingCanvasCheck = false;
-        alert("Окружность номер два выходит за границы холста по оси x!")
+    for(let i = 0; i < bezierDotsX.length; i++){
+        if(bezierDotsX[i] > 36 || bezierDotsX[i] < -36){
+            alert(`Точка ${i} выходит за границы холста по оси Х!`)
+            return false
+        }
     }
 
-    return exceedingCanvasCheck
+    for(let i = 0; i < bezierDotsY.length; i++){
+        if(bezierDotsY[i] > 21 || bezierDotsY[i] < -21){
+            alert(`Точка ${i} выходит за границы холста по оси Y!`)
+            return false
+        }
+    }
+
+    return true
 
 }
